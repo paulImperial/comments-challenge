@@ -1,0 +1,93 @@
+body {
+    padding:0;
+    margin:0;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1,h2,h3 {
+    font-weight: 500;
+}
+
+.inner {
+    width:80%;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.comment {
+    background-color:#ccc;
+    border:1px solid #000;
+    max-width:100%;
+    min-height:30px;
+    margin: 30px auto;
+}
+
+.button {
+    min-width:100px;
+    border-radius: 4px;
+    padding: 5px 5px;
+    border: none;
+}
+
+.button:hover {
+    background-color:rgba(100,100,100,0.25);
+    cursor:pointer;
+}
+
+.like {
+    background-color: rgb(11.4%, 49.6%, 60.9%);
+}
+
+.dislike {
+    background-color: rgb(92.9%, 21.7%, 23.7%);
+}
+
+.add {
+    background-color: lightblue;
+}
+
+#post {
+    background-color: rgb(13.8%, 42.2%, 51.5%);
+}
+
+.new-comment {
+    border:1px solid #ccc;
+    background-color: #80bfff;
+    margin: 10px 0;
+    padding:10px;
+    transition: 0.5s all ease-in-out;
+    opacity:1;
+    border-radius: 6px;
+}
+
+.new-comment input,  textarea {
+    width:99%;
+}
+
+.hidden {
+    opacity: 0;
+}
+
+input, textarea {
+    padding:5px;
+    border-radius: 4px;
+    border:none;
+    font-family: 'Roboto', sans-serif;
+}
+
+ul li {
+    list-style: none;
+    padding:20px 10px;
+    margin:10px 0;
+}
+
+li {
+    background-color:rgb(17.1%, 64.4%, 78.4%);
+    border-radius: 5px;
+}
+
+.wrap-comment {
+    border-radius: 8px;
+    background-color:#fff;
+    padding:10px;
+}

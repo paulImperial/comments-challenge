@@ -28,6 +28,8 @@ let post = document.getElementById('post');
 let container = document.getElementById('container');
 
 add.addEventListener('click', function () {
+    let pos = newCommentContainer.getBoundingClientRect();
+    window.scrollTo(0,pos.top);
     newCommentContainer.classList.toggle('hidden');
     if (!newCommentContainer.classList.contains('hidden')) {
         closeComment('Cancel Comment');
@@ -52,7 +54,7 @@ let displayComment = function () {
     container.innerHTML = "";
     comments.forEach(function (c) {
         let node = document.createElement('li');
-        node.innerHTML = `<div class="wrap-comment"><p>${c.name} says</p><p>${c.comment}</p><p id=${c.GUID}><button class="button like js-like">Like <span class="js-like-update">${c.likes}</span></button>
+        node.innerHTML = `<div class="wrap-comment"><p>${c.name} says:</p><p>${c.comment}</p><p id=${c.GUID}><button class="button like js-like">Like <span class="js-like-update">${c.likes}</span></button>
         <button class="button dislike js-dislike">Dislike <span class="js-dislike-update">${c.dislikes}</span></button></p></div>`
         container.appendChild(node);
     })
